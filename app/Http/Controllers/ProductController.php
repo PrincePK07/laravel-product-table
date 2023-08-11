@@ -12,9 +12,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::latest()->paginate(5);
+        $commodity = Product::latest()->paginate(5);
 
-        return view('items.index',compact('products'))->with(request()->input('page'));
+        return view('items.index',compact('commodity'))->with(request()->input('page'));
     }
 
     /**
@@ -50,7 +50,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        
+        return view('items.show',compact('product'));
     }
 
     /**

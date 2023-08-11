@@ -35,7 +35,7 @@
       <select class="form-control" id="exampleFormControlSelect1" name="status">
         <option>Active</option>
         <option>Out of stock</option>
-        <option>Comming Soon</option>
+        <option>Coming Soon</option>
 </select>
 
     </div>
